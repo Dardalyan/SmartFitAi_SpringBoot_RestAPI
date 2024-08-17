@@ -80,6 +80,16 @@ public class Info {
            return bmr*1.9;
     }
 
+    public void setBmr() {
+        this.bmr = calculateBMR();
+    }
+
+    public void setCalorie_bound() {
+        this.calorie_bound = calculateCalBound();
+    }
+
+
+
     public static String fieldsLike(){
         return
         String.format(

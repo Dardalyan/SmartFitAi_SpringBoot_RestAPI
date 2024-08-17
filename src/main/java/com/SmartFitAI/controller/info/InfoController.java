@@ -92,6 +92,10 @@ public class InfoController {
                             infoField.setAccessible(true);
                             infoField.set(info, infoDTOfield.get(infoDTO));
                         }
+                        if(!infoDTOfield.getName().equals("target_body_parts") && !infoDTOfield.getName().equals("target")){
+                            info.setBmr();
+                            info.setCalorie_bound();
+                        }
                     }
                 }// END IF
                 else{
@@ -101,6 +105,8 @@ public class InfoController {
                         infoField.setAccessible(true);
                         infoField.set(info, infoDTOfield.get(infoDTO));
                     }// END FOR
+                        info.setBmr();
+                        info.setCalorie_bound();
                 }// END ELSE
 
 
