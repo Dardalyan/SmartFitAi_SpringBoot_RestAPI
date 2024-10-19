@@ -1,5 +1,8 @@
 ```
   This is a simple program for a person who wants to know his/her daily BMR and how much calorie burns in a day.
+  
+  DB Information: MongoDB - NoSQL
+  
   You can simply create a program and update it later.
   You will see the some operations of the API.
 ```
