@@ -13,7 +13,6 @@ import java.io.IOException;
 public class JWTEntryPoint implements AuthenticationEntryPoint {
     @Override // SENDS ERROR MESSAGE IF JWT IS NOT CORRECT
     public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException authException) throws IOException, ServletException {
-        System.out.println(authException.getMessage());
         response.sendError(HttpServletResponse.SC_UNAUTHORIZED,authException.getMessage());
     }
 }
